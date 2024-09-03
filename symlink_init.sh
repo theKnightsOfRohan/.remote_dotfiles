@@ -16,7 +16,7 @@ for df in $dotfiles; do
     else
         echo "$df symlink does not exist or is invalid"
 
-        ln -sf "$src_path" "$tgt_path"
+        ln -s "$src_path" "$tgt_path"
 
         echo "Symlinked $df"
     fi

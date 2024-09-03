@@ -1,6 +1,7 @@
 #!/usr/bin/bash
 
-ssh-keygen -t rsa -b 4096 -C $(git config user.email)
+ssh-keygen -t rsa -b 4096 -C $(git config user.email) -N "" -f ~/.ssh/github
+echo -e "\n"
 
 touch ~/.ssh/config
 cat <<EOL >~/.ssh/config
